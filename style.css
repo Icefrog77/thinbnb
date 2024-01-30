@@ -1,0 +1,268 @@
+* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  max-width: 100%;
+  height: auto; 
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+  margin-bottom: 10px; 
+}
+
+nav {
+  display: flex;
+  align-items: center; 
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#menu li {
+  margin-right: 20px;
+}
+
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+#menu li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; 
+}
+
+form label {
+  font-weight: bold;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  flex: 2;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+  flex: 3; 
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media only screen and (min-width: 769px) {
+  #about {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-details {
+    display: flex;
+    flex-direction: row; /* Keep images and paragraph in a row */
+    justify-content: space-between; /* Space them apart horizontally */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .image-container {
+    display: flex;
+    max-width: 1001px;
+  }
+  
+  .left-image {
+    margin-right: 10px; /* Adjust margin as needed */
+    max-width: 250px;
+  }
+  .left-imagefor {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  .left-imagecab {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  .paragraph-container {
+    max-width: 45%; /* Adjust the width of the paragraph container */
+  }
+  .about-details img {
+    max-width: 100%;
+    margin-top: 20px; 
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  #menu {
+    flex-direction: row;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  form label,
+  form select,
+  form input {
+    margin-bottom: 0;
+  }
+
+  form button {
+    width: auto;
+  }
+
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #about img {
+    max-width: 50%;
+  }
+
+  #ideas {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ideas-details {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .image-item {
+    
+    max-width: 700px; /* Adjust max-width as needed */
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  #host {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+  }
+  
+  .texts {
+    flex: 1; /* Take up remaining space in the flex container */
+    align-items: center;
+    flex-direction:column;
+  }
+  
+  #host img {
+    max-width: 50%;
+    margin-left: 20px; /* Add space between the text and the image */
+  }
+}
